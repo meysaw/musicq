@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>musiQ</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-music"> </i>
+                <span>musiQ</span>
+                <button class="collapse-btn" id="collapse-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+            <nav>
+                <ul>
+                    <li class="active" onclick="showSection('home')">
+                        <i class="fa-solid fa-house"></i> Home
+                    </li>
+                    <li onclick="showSection('search')">
+                        <i class="fa-solid fa-magnifying-glass"></i> Search
+                    </li>
+                    <li onclick="showSection('library')">
+                        <i class="fa-solid fa-heart"></i> My Library
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <div class="search-bar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text" id="searchInput" placeholder="Search for artists, tracks..." />
+                </div>
+                <div class="user-info">
+                    <button id="user-btn" onclick="handleUserBtnClick()" class="fa-solid fa-user" style="
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+              "></button>
+                </div>
+            </header>
+            <section id="content" class="content-area">
+                <!-- Dynamic Content Here -->
+                <div id="home-view">
+                    <h2>Trending Now</h2>
+                    <div class="track-grid" id="trending-tracks">
+                        <!-- Tracks injected here -->
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+</body>
+
+</html>
