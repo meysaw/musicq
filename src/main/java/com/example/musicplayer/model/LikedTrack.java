@@ -38,9 +38,11 @@ public class LikedTrack {
         likedAt = LocalDateTime.now();
     }
 
-    public LikedTrack() {}
+    public LikedTrack() {
+    }
 
-    public LikedTrack(String trackId, String trackName, String artistName, String albumImage, String audioUrl, User user) {
+    public LikedTrack(String trackId, String trackName, String artistName, String albumImage, String audioUrl,
+            User user) {
         this.trackId = trackId;
         this.trackName = trackName;
         this.artistName = artistName;
@@ -50,27 +52,67 @@ public class LikedTrack {
     }
 
     // Getters and Setters
-    public Long getId() { return id; }
-    public void setId(Long id) { this.id = id; }
+    public Long getId() {
+        return id;
+    }
 
-    public String getTrackId() { return trackId; }
-    public void setTrackId(String trackId) { this.trackId = trackId; }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
-    public String getTrackName() { return trackName; }
-    public void setTrackName(String trackName) { this.trackName = trackName; }
+    public String getTrackId() {
+        return trackId;
+    }
 
-    public String getArtistName() { return artistName; }
-    public void setArtistName(String artistName) { this.artistName = artistName; }
+    public void setTrackId(String trackId) {
+        this.trackId = trackId;
+    }
 
-    public String getAlbumImage() { return albumImage; }
-    public void setAlbumImage(String albumImage) { this.albumImage = albumImage; }
+    public String getTrackName() {
+        return trackName;
+    }
 
-    public String getAudioUrl() { return audioUrl; }
-    public void setAudioUrl(String audioUrl) { this.audioUrl = audioUrl; }
+    public void setTrackName(String trackName) {
+        this.trackName = trackName;
+    }
 
-    public User getUser() { return user; }
-    public void setUser(User user) { this.user = user; }
+    public String getArtistName() {
+        return artistName;
+    }
 
-    public LocalDateTime getLikedAt() { return likedAt; }
-    public void setLikedAt(LocalDateTime likedAt) { this.likedAt = likedAt; }
+    public void setArtistName(String artistName) {
+        this.artistName = artistName;
+    }
+
+    public String getAlbumImage() {
+        return albumImage;
+    }
+
+    public void setAlbumImage(String albumImage) {
+        this.albumImage = albumImage;
+    }
+
+    public String getAudioUrl() {
+        return audioUrl;
+    }
+
+    public void setAudioUrl(String audioUrl) {
+        this.audioUrl = audioUrl;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
+    }
+
+    public LocalDateTime getLikedAt() {
+        return likedAt;
+    }
+
+    public void setLikedAt(LocalDateTime likedAt) {
+        this.likedAt = likedAt;
+    }
 }

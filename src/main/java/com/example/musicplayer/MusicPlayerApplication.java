@@ -14,7 +14,7 @@ public class MusicPlayerApplication {
 			String jdbcUrl = "jdbc:postgresql://" + dbUrl.substring("postgres://".length());
 			System.setProperty("spring.datasource.url", jdbcUrl);
 		}
-		
+
 		SpringApplication.run(MusicPlayerApplication.class, args);
 	}
 
